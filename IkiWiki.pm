@@ -2028,14 +2028,14 @@ sub run_hooks ($$;$) {
 	if (exists $hooks{$type}) {
 		my (@first, @middle, @last);
 		foreach my $id (keys %{$hooks{$type}}) {
-			if ($hooks{$type}{$id}{first}) {
+                        if ($id ne $pagetype && $hooks{$type}{$id}{exclusive}) {
+			    # do nothing so that the hook isn't run
+			}
+			elsif ($hooks{$type}{$id}{first}) {
 				push @first, $id;
 			}
 			elsif ($hooks{$type}{$id}{last}) {
 				push @last, $id;
-			}
-			elsif ($pagetype && $id ne $pagetype && $hooks{$type}{$id}{exclusive}) {
-			    # do nothing so that the hook isn't run
 			}
 			else {
 				push @middle, $id;
