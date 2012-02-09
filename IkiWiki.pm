@@ -1371,6 +1371,7 @@ sub linkify ($$$) {
 	my $page=shift;
 	my $destpage=shift;
 	my $content=shift;
+	my $type=pagetype($pagesources{$page});
 
 	run_hooks(linkify => sub {
 		$content=shift->(
@@ -1378,7 +1379,7 @@ sub linkify ($$$) {
 			destpage => $destpage,
 			content => $content,
 		);
-	});
+	}, $type);
 	
 	return $content;
 }
@@ -2017,11 +2018,12 @@ sub hook (@) {
 	return 1;
 }
 
-sub run_hooks ($$) {
+sub run_hooks ($$;$) {
 	# Calls the given sub for each hook of the given type,
 	# passing it the hook function to call.
 	my $type=shift;
 	my $sub=shift;
+	my $pagetype=shift;
 
 	if (exists $hooks{$type}) {
 		my (@first, @middle, @last);
@@ -2031,6 +2033,9 @@ sub run_hooks ($$) {
 			}
 			elsif ($hooks{$type}{$id}{last}) {
 				push @last, $id;
+			}
+			elsif ($pagetype && $id ne $pagetype && $hooks{$type}{$id}{exclusive}) {
+			    # do nothing so that the hook isn't run
 			}
 			else {
 				push @middle, $id;

@@ -48,7 +48,7 @@ sub preprocess (@) {
 				page => $params{page},
 				content => $params{data},
 			);
-		});
+		}, pagetype($params{file}));
 
 		return;
 	}

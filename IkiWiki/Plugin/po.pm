@@ -293,7 +293,7 @@ sub scan (@) {
 			content => $content,
 			run_by_po => 1,
 		);
-	});
+	}, pagetype($page));
 }
 
 # We use filter to convert PO to the master page's format,

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-02 22:29-0400\n"
+"POT-Creation-Date: 2012-02-09 11:29-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid "You are banned."
 msgstr ""
 
-#: ../IkiWiki/CGI.pm:464 ../IkiWiki/CGI.pm:465 ../IkiWiki.pm:1480
+#: ../IkiWiki/CGI.pm:464 ../IkiWiki/CGI.pm:465 ../IkiWiki.pm:1481
 msgid "Error"
 msgstr ""
 
@@ -370,26 +370,26 @@ msgstr ""
 msgid "%s is an attachment, not a page."
 msgstr ""
 
-#: ../IkiWiki/Plugin/git.pm:777 ../IkiWiki/Plugin/git.pm:840
-#: ../IkiWiki.pm:1700
+#: ../IkiWiki/Plugin/git.pm:784 ../IkiWiki/Plugin/git.pm:847
+#: ../IkiWiki.pm:1701
 #, perl-format
 msgid "you are not allowed to change %s"
 msgstr ""
 
-#: ../IkiWiki/Plugin/git.pm:799
+#: ../IkiWiki/Plugin/git.pm:806
 #, perl-format
 msgid "you cannot act on a file with mode %s"
 msgstr ""
 
-#: ../IkiWiki/Plugin/git.pm:803
+#: ../IkiWiki/Plugin/git.pm:810
 msgid "you are not allowed to change file modes"
 msgstr ""
 
-#: ../IkiWiki/Plugin/git.pm:873
+#: ../IkiWiki/Plugin/git.pm:880
 msgid "you are not allowed to revert a merge"
 msgstr ""
 
-#: ../IkiWiki/Plugin/git.pm:892
+#: ../IkiWiki/Plugin/git.pm:897
 #, perl-format
 msgid "Failed to revert commit %s"
 msgstr ""
@@ -1247,36 +1247,36 @@ msgstr ""
 msgid "failed to load external plugin needed for %s plugin: %s"
 msgstr ""
 
-#: ../IkiWiki.pm:1462
+#: ../IkiWiki.pm:1463
 #, perl-format
 msgid "preprocessing loop detected on %s at depth %i"
 msgstr ""
 
-#: ../IkiWiki.pm:1656
+#: ../IkiWiki.pm:1657
 #, perl-format
 msgid "bad file name %s"
 msgstr ""
 
-#: ../IkiWiki.pm:1956
+#: ../IkiWiki.pm:1957
 #, perl-format
 msgid "template %s not found"
 msgstr ""
 
-#: ../IkiWiki.pm:2206
+#: ../IkiWiki.pm:2211
 msgid "yes"
 msgstr ""
 
-#: ../IkiWiki.pm:2283
+#: ../IkiWiki.pm:2288
 #, perl-format
 msgid "invalid sort type %s"
 msgstr ""
 
-#: ../IkiWiki.pm:2304
+#: ../IkiWiki.pm:2309
 #, perl-format
 msgid "unknown sort type %s"
 msgstr ""
 
-#: ../IkiWiki.pm:2440
+#: ../IkiWiki.pm:2445
 #, perl-format
 msgid "cannot match pages: %s"
 msgstr ""

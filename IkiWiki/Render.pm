@@ -182,7 +182,7 @@ sub scan ($) {
 				page => $page,
 				content => $content,
 			);
-		});
+		}, pagetype($page));
 	}
 	else {
 		will_render($file, $file, 1);
@@ -485,7 +485,7 @@ sub find_changed ($) {
 						page => $page,
 						content => $content,
 					);
-				});
+				}, pagetype($file));
 
 				push @internal_changed, $file;
 			}
