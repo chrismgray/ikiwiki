@@ -136,7 +136,14 @@ hook.
 
 An optional "last" parameter, if set to a true value, makes the hook run
 after all other hooks of its type, and an optional "first" parameter makes
-it run first. Useful if the hook depends on some other hook being run first.
+it run first. Useful if the hook depends on some other hook being run
+first.  
+
+Another optional parameter is "exclusive".  This means that the hook
+should only be called for pages whose type matches the "id" parameter.
+This does not mean that other hooks will not be called for these
+files, only that the hook will not be called for pages that do not
+match.
 
 ## Types of hooks
 
