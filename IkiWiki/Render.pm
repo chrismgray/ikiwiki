@@ -182,7 +182,7 @@ sub scan ($) {
 				page => $page,
 				content => $content,
 			);
-		}, pagetype($page));
+		}, $type);
 	}
 	else {
 		will_render($file, $file, 1);

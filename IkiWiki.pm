@@ -2024,6 +2024,7 @@ sub run_hooks ($$;$) {
 	my $type=shift;
 	my $sub=shift;
 	my $pagetype=shift;
+	$pagetype = "" unless defined $pagetype;
 
 	if (exists $hooks{$type}) {
 		my (@first, @middle, @last);
