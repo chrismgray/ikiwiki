@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-09 11:29-0700\n"
+"POT-Creation-Date: 2012-02-09 16:19-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1262,21 +1262,21 @@ msgstr ""
 msgid "template %s not found"
 msgstr ""
 
-#: ../IkiWiki.pm:2211
+#: ../IkiWiki.pm:2212
 msgid "yes"
 msgstr ""
 
-#: ../IkiWiki.pm:2288
+#: ../IkiWiki.pm:2289
 #, perl-format
 msgid "invalid sort type %s"
 msgstr ""
 
-#: ../IkiWiki.pm:2309
+#: ../IkiWiki.pm:2310
 #, perl-format
 msgid "unknown sort type %s"
 msgstr ""
 
-#: ../IkiWiki.pm:2445
+#: ../IkiWiki.pm:2446
 #, perl-format
 msgid "cannot match pages: %s"
 msgstr ""
